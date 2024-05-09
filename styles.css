@@ -1,0 +1,60 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: white;
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h2 {
+    text-align: center;
+}
+
+.filter-container {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.filter-container label {
+    font-weight: bold;
+    margin-right: 10px;
+}
+
+.filter-container input {
+    margin-right: 20px;
+    padding: 5px;
+}
+
+#pokemon-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start; /* Align items at the start of container */
+    margin-top: 20px; /* Add margin to create space between submission area and Pokémon list */
+}
+
+.card {
+    width: 100px;
+    background-color: #6488ea;
+    border: 10px solid black;
+    border-radius: 15px;
+    margin: 10px;
+    padding: 10px;
+}
+
+.dark-mode {
+    background-color: #333333;
+    color: white;
+}
+
+.tooltip {
+    position: absolute;
+    background-color: black;
+    opacity: .7;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    display: none;
+}

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pokemon Filter</title>
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="script.js"></script>
+</head>
+<body>
+    <div class="filter-container">
+        <div >
+            <img id="titleImage" src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/98/International_Pok%C3%A9mon_logo.svg/2560px-International_Pok%C3%A9mon_logo.svg.png"
+            width="600"
+            height="250"/>
+        </div>
+        <div>
+            <h2>Filter your Pokémon!</h2>
+        </div>
+        <br>
+        <label for="name">Name:</label>
+        <input type="text" name="name" id="pokemon-name" />
+        <label for="type">Type:</label> 
+        <select id="type">
+            <option value=""> </option>
+            <option value="Normal">normal</option>
+            <option value="Fire">fire</option>
+            <option value="Water">water</option>
+            <option value="Electric">electric</option>
+            <option value="Grass">grass</option>
+            <option value="Ice">ice</option>
+            <option value="Fighting">fighting</option>
+            <option value="Poison">poison</option>
+            <option value="Ground">ground</option>
+            <option value="Flying">flying</option>
+            <option value="Psychic">psychic</option>
+            <option value="Bug">bug</option>
+            <option value="Rock">rock</option>
+            <option value="Ghost">ghost</option>
+            <option value="Dragon">dragon</option>
+        </select>
+        <br>
+        <br>
+        <button id="filter-button" onclick="filterPokemon()">Filter</button>
+    </div>
+    <div id="pokemon-container">
+        <!-- submitted Pokemon will be displayed here -->
+    </div>
+</body>
+</html>
